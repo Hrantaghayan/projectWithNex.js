@@ -1,0 +1,79 @@
+.ToDoModal-cont {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0.0902, 0.2588, 0.451, 0.3);
+    overflow: auto;
+    &__Content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      gap: 24px;
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      background: linear-gradient(135deg, #cc2b5e, #753a88);
+      border: 1px solid #07d3c4;
+      box-shadow: 0px 0px 20px rgba(7, 211, 196, 0.5);
+      border-radius: 8px;
+      &__text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #fefefe;
+      }
+      &__inpWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        &__inp {
+          width: 100%;
+          max-width: 250px;
+          border-radius: 10px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          color: #fefefe;
+          background-color: transparent;
+          outline: none;
+          border: 1.5px solid #07d3c4;
+          padding: 5px 10px;
+        }
+        &__btn {
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          background-color: transparent;
+          border: 1.5px solid #07d3c4;
+          cursor: pointer;
+          &__text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #fefefe;
+          }
+        }
+      }
+    }
+  }
+  

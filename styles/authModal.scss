@@ -1,0 +1,108 @@
+.LogOutModal-cont {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0.0902, 0.2588, 0.451, 0.3);
+    overflow: auto;
+    &__content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      gap: 24px;
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      background: linear-gradient(135deg, #cc2b5e, #753a88);
+      border: 1px solid #07d3c4;
+      box-shadow: 0px 0px 20px rgba(7, 211, 196, 0.5);
+      border-radius: 8px;
+      &__imgWrapper {
+        width: 162px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #fefefe;
+      }
+      &__btnWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 100%;
+        max-width: 312px;
+        box-sizing: border-box;
+        &__btn1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 68px 8px 67px;
+          gap: 6px;
+          width: 100%;
+          max-width: 144px;
+          height: 40px;
+          border: 1px solid #1b2084;
+          border-radius: 8px;
+          box-sizing: border-box;
+          background-color: #1e204c;
+  
+          cursor: pointer;
+          &__leftBtnText {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+          }
+        }
+        &__btn2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 68px 8px 67px;
+          gap: 6px;
+          width: 100%;
+          max-width: 144px;
+          height: 40px;
+          background: #cc2b5e;
+          border: none;
+          border-radius: 8px;
+          box-sizing: border-box;
+          cursor: pointer;
+          &__text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #174273;
+          }
+        }
+      }
+    }
+  }
+  

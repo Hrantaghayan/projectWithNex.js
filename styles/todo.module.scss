@@ -1,0 +1,116 @@
+.toDO {
+  padding-top: 80px;
+  // display: flex;
+  height: calc(100vh - 80px);
+  width: 100%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 100%;
+  // justify-content: center;
+  // align-items: center;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.toDObtn {
+  width: 100%;
+  background-color: #753a88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.add {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #fefefe;
+}
+.active {
+  border-bottom: 1.5px solid #cc2b5e !important;
+  line-height: 20px !important;
+  pointer-events: none;
+}
+.filterCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #753a88;
+    cursor: pointer;
+    line-height: 40px;
+    border-bottom: none;
+    position: relative;
+
+    transition: color 0.7s, line-height 0.7s, border-bottom 0.7s;
+    &:hover {
+      color: #753a88; /* Change link color on hover */
+      text-decoration: none; /* Add underline on hover */
+      line-height: 40px;
+      border-bottom: 1.5px solid #cc2b5e;
+      line-height: 20px;
+    }
+  }
+}
+.filterCont > p::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #cc2b5e;
+  transition: width 0.7s; /* Transition width property */
+}
+
+.filterCont > p:hover {
+  color: #753a88;
+  text-decoration: none;
+  line-height: 20px;
+  border-bottom: none; /* Remove the original border on hover */
+}
+
+.filterCont > p:hover::before {
+  width: 100%; /* Expand the pseudo-element from left to right on hover */
+}
